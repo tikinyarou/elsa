@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>pixel art</title>
+</head>
+
+<body>
+
+<form class="sample">
+  <span>色を選んでください。</span>
+  <label>Color;</label>
+</form>
+
+<script src="color.js"></script>
+
+<form name=rgb>
+<input type="color" value="#ff0000" id="get" onchange="fethc()">
+<input type=text id="put" name=hex size=7 maxlength=7>
+<input type=button name=btn onChange="test()" value="Convert to RGB">
+R:<input type=text name=r size=3 style="width:33px;">
+G:<input type=text name=g size=3 style="width:33px;">
+B:<input type=text name=b size=3 style="width:33px;">
+
+</form>
+</body>
+</html>
