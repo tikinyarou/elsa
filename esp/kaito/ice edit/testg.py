@@ -8,7 +8,7 @@ with open("to_process_code.txt") as gcode_file_original:
         get = line.find("Z")
 
         if get != -1:
-            line = "\n" + "G94" + line + "\n" + "G93" + "\n"
+            line = "\n" + "G94" + "\n" + line + "\n" + "G93" + "\n"
             print(line)
             file.write(line)
         else:
